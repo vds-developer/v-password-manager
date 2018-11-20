@@ -1,0 +1,38 @@
+{
+  "name": "Void Password Manager",
+  "version": "2.0",
+  "description": "Password Manager",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "identity",
+    "contextMenus"
+  ],
+  "options_page": "app/utils/options.html",
+  "background": {
+    "scripts": [],
+    "page": "app/services/background.html",
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Void Password Manager",
+    "default_icon": {
+      "16": "assets/images/void_password_manager.png",
+      "48": "assets/images/void_password_manager.png",
+      "128": "assets/images/void_password_manager.png"
+    }
+  },
+  "icons": {
+    "16": "assets/images/void_password_manager.png",
+    "48": "assets/images/void_password_manager.png",
+    "128": "assets/images/void_password_manager.png"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

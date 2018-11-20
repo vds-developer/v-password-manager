@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {DAOService} from './services/DAO.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'V-Password-Manager';
+  data: any;
+  constructor (private database: DAOService) {
+    database.getObservableListItem().subscribe(data => this.data = data);
+  }
+
 }
