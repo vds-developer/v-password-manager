@@ -33,6 +33,6 @@ export class FirebaseUpdate {
     });
   }
   updateUserModel(key: string, usernamePasswordModel: UserNamePasswordModel) {
-    this.updateByPath(key, usernamePasswordModel))
+    this.updateByPath(key, usernamePasswordModel)
   }
 }

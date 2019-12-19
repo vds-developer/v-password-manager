@@ -11,6 +11,7 @@ export const environment = {
     databaseURL: 'https://void-password-manager.firebaseio.com',
     projectId: 'void-password-manager',
     storageBucket: 'void-password-manager.appspot.com',
-    messagingSenderId: '174844101998'
+    messagingSenderId: '174844101998',
+    appId: "1:174844101998:web:cd57925cf18ea4e3"
   }
 };
